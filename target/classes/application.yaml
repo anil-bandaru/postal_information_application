@@ -1,0 +1,36 @@
+server:
+  servlet:
+    contextPath: /postalInfo
+  port: 8080
+
+
+spring:
+  application:
+    name: PostalDataInformation
+  datasource:
+    driver-class-name: 
+    url:
+    username: 
+    password: 
+  jpa:
+    properties:
+      hibernate:
+        dialect:
+        format_sql: false
+        show_sql: false
+
+
+
+cors:
+  origins: "*"
+  methods: GET, POST
+  allowedHeaders: "*"
+  exposedHeaders: Content-Disposition
+  allowedPathsPattern: "/**"
+  
+  
+errors:
+  dataNotFound: Data Not Found For Given Input
+  duplicateData: Data Already exists
+  
+  
